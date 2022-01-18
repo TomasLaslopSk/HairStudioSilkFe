@@ -1,0 +1,32 @@
+<div class="content" role="main">
+
+<mat-card class="form-container">
+  <h1>Pridat prispevok</h1>
+  <form *ngIf="showAddPost" class="add-form" (submit)="onSubmitPost(postForm)" #postForm="ngForm">
+  <div class="form-control">
+    <mat-form-field appearance="fill">
+      <mat-label>Titulok</mat-label>
+      <input matInput
+      type="text"
+      name="postTitle"
+      ngModel
+      required
+      #title="ngModel">
+      <mat-error *ngIf="title.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Obsah príspevku</mat-label>
+      <input matInput
+      type="text"
+      name="postContent"
+      ngModel
+      required
+      #content="ngModel">
+      <mat-error *ngIf="content.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="accent" type="submit">Pridať</button>
+  </div>
+</form>
+</mat-card>
+
+</div>

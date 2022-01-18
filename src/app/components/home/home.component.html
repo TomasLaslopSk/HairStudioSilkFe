@@ -1,0 +1,124 @@
+<div class="content" role="main">
+  <h2>JJ Visage</h2>
+  <p>Starostlivost o vase vlasy</p>
+
+  <div class="card-container">
+    <a class="card">
+      <img
+        width="20"
+        alt="JjVisage Logo"
+        src="../../../assets/jj-visage-icons/bag-shopping-solid.svg"
+      />
+    </a>
+
+    <a class="card" routerLink="appointments" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">
+      <img
+        width="20"
+        alt="JjVisage Logo"
+        src="../../../assets/jj-visage-icons/calendar-check-solid.svg"
+      />
+    </a>
+
+    <a class="card" routerLink="blog" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">
+      <img
+        width="20"
+        alt="JjVisage Logo"
+        src="../../../assets/jj-visage-icons/blog-solid.svg"
+      />
+    </a>
+
+    <a class="card">
+      <img
+        width="20"
+        alt="JjVisage Logo"
+        src="../../../assets/jj-visage-icons/camera-solid.svg"
+      />
+    </a>
+
+  </div>
+
+  <h2>Premýšlate nad zmenou?</h2>
+  <p>Vyberte si s atraktívnych štýlov a objednajte sa na konzultáciu</p>
+
+  <input type="hidden" #selection>
+
+  <div class="card-container">
+    <button class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+      <div class="card-content">
+        <h2>Ombre</h2>
+        <span>Cena od: 90€</span>
+      </div>
+      <div class="card-image">
+        <img
+        alt="JjVisage Logo"
+        src="../../../assets/img/ombre.jpeg"
+        />
+      </div>
+    </button>
+
+    <button class="card card-small" (click)="selection.value = 'material'" tabindex="0">
+      <div class="card-content">
+        <h2>Sombre</h2>
+        <span>Cena od: 90€</span>
+      </div>
+      <div class="card-image">
+        <img
+        alt="JjVisage Logo"
+        src="../../../assets/img/sombre.jpeg"
+        />
+      </div>
+    </button>
+
+    <button class="card card-small" (click)="selection.value = 'pwa'" tabindex="0">
+      <div class="card-content">
+        <h2>Brondi</h2>
+        <span>Cena od: 90€</span>
+      </div>
+      <div class="card-image">
+        <img
+        alt="JjVisage Logo"
+        src="../../../assets/img/Brondi.jpeg"
+        />
+      </div>
+    </button>
+
+    <button class="card card-small" (click)="selection.value = 'dependency'" tabindex="0">
+      <div class="card-content">
+        <h2>Balayage</h2>
+        <span>Cena od: 90€</span>
+      </div>
+      <div class="card-image">
+      <img
+        alt="JjVisage Logo"
+        src="../../../assets/img/Balayange.jpeg"
+        />
+    </div>
+    </button>
+
+    <button class="card card-small" (click)="selection.value = 'test'" tabindex="0">
+      <div>
+        <h2>Melírovanie</h2>
+        <span>Cena od: 90€</span>
+      </div>
+      <div class="card-image">
+        <img
+        alt="JjVisage Logo"
+        src="../../../assets/img/Babylights.jpeg"
+        />
+    </div>
+    </button>
+
+    <button class="card card-small" (click)="selection.value = 'build'" tabindex="0">
+      <div>
+        <h2>Babylights</h2>
+        <span>Cena od: 90€</span>
+      </div>
+      <div class="card-image">
+        <img
+        alt="JjVisage Logo"
+        src="../../../assets/img/ombre.jpeg"
+        />
+    </div>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="content" role="main">
+
+<mat-card class="form-container">
+  <h1>Pridané príspevky</h1>
+  <p>Posts count: {{posts.length}}</p>
+
+  <mat-accordion multi="true" *ngIf="posts.length > 0">
+    <mat-expansion-panel *ngFor="let post of posts">
+      <mat-expansion-panel-header>
+        <mat-panel-description>
+          {{post.title}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>{{post.content}}</p>
+      <mat-action-row>
+        <button mat-button color="primary">EDIT</button>
+        <button mat-button color="warn" (click)="onDeletePost(post.id)">DELETE</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <p class="info-text mat-body-1" *ngIf="posts.length <= 0">No posts added yet</p>
+</mat-card>
+
+</div>

@@ -1,0 +1,42 @@
+<div class="content" role="main">
+
+<mat-card class="form-container">
+  <h1>Rezervovať termín</h1>
+  <form *ngIf="showAddAppointment" class="add-form" (submit)="onSubmitAppointment(appointmentForm)" #appointmentForm="ngForm">
+  <div class="form-control">
+    <mat-form-field appearance="fill">
+      <mat-label>Meno</mat-label>
+      <input matInput
+      type="text"
+      name="appointmentName"
+      ngModel
+      required
+      #name="ngModel">
+      <mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Dátum</mat-label>
+      <input matInput
+      type="text"
+      name="appointmentDate"
+      ngModel
+      required
+      #date="ngModel">
+      <mat-error *ngIf="date.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput
+      type="text"
+      name="appointmentEmail"
+      ngModel
+      required
+      #email="ngModel">
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="accent" type="submit">Pridať</button>
+  </div>
+</form>
+</mat-card>
+
+</div>

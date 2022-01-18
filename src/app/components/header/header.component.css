@@ -1,0 +1,42 @@
+.mat-toolbar{
+  background-color: white;
+  color: white;
+}
+.mat-button{
+   color: black;
+}
+
+img {
+  margin: 0 16px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+#facebook-logo {
+  height: 40px;
+  margin: 0 8px;
+}
+
+#youtube-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+#instagram-logo {
+  height: 40px;
+  margin: 0 8px;
+}
+
+#pinterest-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+#facebook-logo:hover,
+#instagram-logo:hover,
+#pinterest-logo:hover,
+#youtube-logo:hover {
+  opacity: 0.8;
+}
